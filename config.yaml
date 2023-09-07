@@ -1,0 +1,7 @@
+debug: true
+disable-kube-proxy: true
+cni:
+  - "cilium"
+disable:
+  - "rke2-ingress-nginx"
+  
