@@ -12,6 +12,3 @@ spec:
       chainingMode: "none"
     ingressController:
       enabled: true
-      default: true
-      loadbalancerMode: "shared"
-      enforceHttps: false
