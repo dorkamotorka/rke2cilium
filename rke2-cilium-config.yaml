@@ -13,6 +13,7 @@ spec:
     ingressController:
       enabled: true
     hubble:
+      enabled: true
       relay:
         enabled: true
       ui:
