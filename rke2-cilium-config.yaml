@@ -12,3 +12,8 @@ spec:
       chainingMode: "none"
     ingressController:
       enabled: true
+    hubble:
+      relay:
+        enabled: true
+      ui:
+        enabled: true
