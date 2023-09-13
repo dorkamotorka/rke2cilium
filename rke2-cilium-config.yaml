@@ -17,6 +17,13 @@ spec:
       enabled: false
     gatewayAPI:
       enabled: true
+    externalIP:
+      enabled: true
+    l2announcements:
+      enabled: true
+      leaseDuration: "3s"
+      leaseRenewDeadline: "1s"
+      leaseRetryPeriod: "500ms"
     l7Proxy: true
     hubble:
       enabled: true
