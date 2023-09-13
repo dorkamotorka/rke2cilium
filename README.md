@@ -1,6 +1,12 @@
 # rke2cilium
 RKE2 Kubernetes Cluster with Cilium
 
+## Deployment
+
+Deploy example pods:
+```
+kubectl apply -f deployment.yaml
+```
 
 ## Hubble
 ```
