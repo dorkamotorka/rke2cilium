@@ -5,6 +5,14 @@ Tested on RKE2 version `v1.26.9+rke2r1`.
 
 ## Install
 
+General install:
+```
+curl -sfL https://get.rke2.io | sudo sh -
+sudo systemctl enable rke2-server.service
+sudo systemctl start rke2-server.service
+```
+
+To install a specific version:
 ```
 sudo su
 curl -sfL https://get.rke2.io --output install.sh
