@@ -1,6 +1,8 @@
 # rke2cilium
 RKE2 Kubernetes Cluster with Cilium
 
+Tested on RKE2 version `v1.26.9+rke2r1`.
+
 ## Install
 
 ```
