@@ -1,6 +1,15 @@
 # rke2cilium
 RKE2 Kubernetes Cluster with Cilium
 
+## Install
+
+```
+sudo su
+curl -sfL https://get.rke2.io --output install.sh
+chmod +x install.sh
+INSTALL_RKE2_CHANNEL="v1.24" ./install.sh
+```
+
 ## Deployment
 
 Deploy example pods:
