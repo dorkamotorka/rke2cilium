@@ -3,3 +3,23 @@ node-name: "master"
 cni: "cilium"
 disable-kube-proxy: true
 disable: "rke2-ingress-nginx"
+
+# Write kubeconfig file with this mode
+# write-kubeconfig-mode
+
+# Used to specify the network address on which the Kubernetes API server should listen for incoming connections.
+# bind-address
+
+# Used by kube-apiserver to advertise this address to kubernetes controllers which are responsible for preparing endpoints for 
+# kubernetes.default.svc (core Service responsible for communication between internal applications and the the API server). 
+# If not specified, the bind-address is used.
+# advertise-address
+
+# If a node has multiple network interfaces, this flag can be used to explicitly define the IP address that 
+# the kubelet should use for communication with other components within the Kubernetes cluster. 
+# node-ip
+
+# This flag is used to specify an external IP for the node, which is different from the node's internal IP address used for intra-cluster communication. 
+# This is useful in scenarios where you might have a private network inside the cluster and another network that you use to expose services externally. 
+# This flag ensures that the correct IP is advertised for external access.
+# node-external-ip
