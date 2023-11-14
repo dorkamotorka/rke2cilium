@@ -8,8 +8,8 @@ spec:
     kubeProxyReplacement: true
     k8sServiceHost: "88.200.23.239"
     k8sServicePort: 6443
-    cni:
-      chainingMode: "none"
+    #cni:
+    #  chainingMode: "none"
       # binPath
       # confPath
       # logFile (default: "/var/run/cilium/cilium-cni.log")
@@ -21,15 +21,17 @@ spec:
     ingressController:
       enabled: false
     gatewayAPI:
-      enabled: true
-    externalIP:
-      enabled: true
+      enabled: false
+    #externalIP:
+    #  enabled: false
+    enableRuntimeDeviceDetection: true # experimental feature
+    devices: "lan+"
     l2announcements:
-      enabled: true
+      enabled: false
       leaseDuration: "3s"
       leaseRenewDeadline: "1s"
       leaseRetryPeriod: "500ms"
-    l7Proxy: true
+    l7Proxy: false
     hubble:
       enabled: true
       relay:
