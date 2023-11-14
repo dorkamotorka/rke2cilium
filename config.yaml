@@ -1,5 +1,4 @@
 debug: true
-node-name: "master"
 cni: "cilium"
 disable-kube-proxy: true
 disable: "rke2-ingress-nginx"
